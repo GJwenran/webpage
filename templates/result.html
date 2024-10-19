@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("/static/background.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .result-container {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            text-align: center;
+            width: 90%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Uploaded Image</h1>
+        <img src="{{ image_path }}" alt="Uploaded Image">
+        <h2>Description</h2>
+        <p>{{ description }}</p>
+        <a href="{{ url_for('index') }}">Upload another image</a>
+    </div>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
